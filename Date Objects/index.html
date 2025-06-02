@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2 id="demo"></h2>
+    <h2 id="demo2"></h2>
+    <h2 id="demo3"></h2>
+    <h2 id="demo4"></h2>
+    <h2 id="demo5"></h2>
+    <h2 id="demo6"></h2>
+    <h2 id="demo7"></h2>
+    <h2 id="demo8"></h2>
+    <h2 id="demo9"></h2>
+    <script>
+        //There are 9 ways to create a new date object:
+
+        //1. new Date()
+
+        document.getElementById("demo").innerHTML = new Date()
+
+        //2. new Date(date string)
+
+        document.getElementById("demo2").innerHTML = new Date("2023-08-05");  //ex i want to know the day!
+
+        //3. new Date(year, month, ...)
+
+        document.getElementById("demo3").innerHTML = new Date(2023,7,5,2,30,30,0);  // jan = 0 and aug = 7
+        
+        
+        //const d = new Date(2018, 5, 35, 10, 33, 30); == const d = new Date(2018, 6, 5, 10, 33, 30); //becouse of 35 date
+        //                            ^^                         
+        //                            ||
+        //                           error
+        //4,5,,6,7,8. Using 6, 4, 3, or 2 Numbers
+
+        //6 numbers specify year, month, day, hour, minute, second:
+        document.getElementById("demo4").innerHTML = new Date(2023 , 7 , 5 , 2 , 30 , 30);
+
+        //5 numbers specify year, month, day, hour, and minute:
+        document.getElementById("demo5").innerHTML = new Date(2023 , 7 , 5 , 2 , 30);
+
+        //4 numbers specify year, month, day, and hour:
+        document.getElementById("demo6").innerHTML = new Date(2023 , 7 , 5 , 2);
+
+        //3 numbers specify year, month, and day:
+        document.getElementById("demo7").innerHTML = new Date(2023 , 7 , 5);
+
+        //2 numbers specify year and month:
+        document.getElementById("demo8").innerHTML = new Date(2023 , 7);
+
+        //1 numbers specify year:
+        document.getElementById("demo9").innerHTML = new Date(2023);
+
+
+        //Previous Century
+
+        document.getElementById("demo9").innerHTML = new Date(1999 , 1 , 1);
+
+        //9. new Date(milliseconds)
+        
+        document.getElementById("demo9").innerHTML = new Date(100000000000);
+
+        //Displaying Dates
+
+        //convarting Date to string, date string, string using the UTC standard and string using the ISO standard
+    </script>
+</body>
+
+</html>
