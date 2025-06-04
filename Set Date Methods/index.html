@@ -6,19 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    <h2 id="demo1"></h2>
+    <h2 id="demo2"></h2>
+    <h2 id="demo3"></h2>
+    <h2 id="demo4"></h2>
+    <h2 id="demo5"></h2>
+    <h2 id="demo6"></h2>
+    <h2 id="demo7"></h2>
+    <script>                 /*i don't understand 🔴🔴🔴🔴*/
+        const d = new Date("January 01, 2025");
+
         //setFullYear() Method
-
+        document.getElementById("demo1").innerHTML = d.setFullYear(2020);
+        document.getElementById("demo2").innerHTML = d.setFullYear(2020, 11, 3);
         //setMonth() Method
-
+        document.getElementById("demo3").innerHTML = d.setMonth(11);
         //setDate() Method
-
+        document.getElementById("demo4").innerHTML = d.setDate(15);
         //setHours() Method 
-
+        document.getElementById("demo5").innerHTML = d.setHours(22);
         //setMinutes() Method
-
+        document.getElementById("demo6").innerHTML = d.setMinutes(30);
         //setSeconds() Method
-
+        document.getElementById("demo7").innerHTML = d.setSeconds(20);
 
     </script>
 </body>

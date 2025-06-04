@@ -5,4 +5,10 @@ try {
 } catch (error) {
     console.log(error.message); 
 }
+finally{
+    console.log(" i am running");
+    
+}
 
+
+//plrase, Read the Document🔴🔴🔴🔴
