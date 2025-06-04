@@ -32,4 +32,19 @@ console.log("my car is "+myCar.year()+" years old");
 
 //Ex
 
+class old {
+    constructor(year){
+        this.year = year;
+    }
+    age(){
+        let Y = new Date();
+        return Y.getFullYear() - this.year;
+    }
+}
+
+let myOld = new old(2005);
+
+//praint
+
+console.log("I am "+myOld.age()+" years old");
 
